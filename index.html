@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog name</title>
+    <meta name="description" content="This is a small example for a blog only in html5.">
+</head>
+<body>
+    <div id="header">
+        <img src="images/logo.png" alt="blog logo">
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact</li>
+            <li>Other blogs</li>
+        </ul>
+    </div>
+    <div id="body">
+        <div id=entry>
+            <h1>Title of post</h1>
+            <img src="images/banner.png" alt="this is a banner">
+            <p>Introduction to the post</p>
+            <h2>Frist subtitle of post</h2>
+            <p>
+                Explanation of the frist topic. 
+                <br>
+                <b>Relevant information for the explanation. </b>
+                <br>
+                End of the frist topic
+            </p>
+
+            <h2>Second subtitle of post</h2>
+            <p>Introduction to the second topic</p>
+            <img src="images/img1.jpg" alt="image to support explanation">
+            <p>More text</p>
+            <blockquote cite="https://www.wikipedia.org/">
+                <p>Example of cite</p>
+            </blockquote>
+
+            <h2>Third subtitle of post</h2>
+            <p>Exmplanation for the next list</p>
+            <ul>
+                <li>Item 1: this is a list item example</li>
+                <li>Item 2: this is a list item example</li>
+                <li>Item 3: this is a list item example</li>
+                <li>Item 4: this is a list item example</li>
+            </ul>
+                        
+            <h2>Last subtitle of post</h2>
+            <img src="images/img1.jpg" alt="image to support explanation">
+            <p>Conclution of the post</p>
+            <p>Relevant information to end the topic</p>
+
+        </div>
+        <div id="sources">
+            <p>Sources of this blog</p>
+            <ul>
+                <li><a href="wikipedia.org">source 1</a></li>
+                <li><a href="wikipedia.org">source 2</a></li>
+                <li><a href="wikipedia.org">source 3</a></li>
+                <li><a href="wikipedia.org">source 4</a></li>
+                <li><iframe width="800" height="450" src="https://www.youtube.com/embed/TuRnNuVjbOU?list=RDTuRnNuVjbOU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            </ul>
+        </div>
+        <div id="comments">
+            <div id="comment 1">
+                <img src="images/profile.png" alt="user profile image">
+                <i>User name 1</i>
+                <p>publish date</p>
+                <p>User comment</p>
+            </div>
+            <div id="comment 2">
+                <img src="images/profile.png" alt="user profile image">
+                <i>User name 2</i>
+                <p>publish date</p>
+                <p>User comment</p>
+            </div>
+            <div id="comment 3">
+                <img src="images/profile.png" alt="user profile image">
+                <i>User name 3</i>
+                <p>publish date</p>
+                <p>User comment</p>
+            </div>
+        </div>
+        <div id="comment form">
+            <h1>Lave a comment</h1>
+            <p>Your email address will not be published</p>
+            <form action="www.127.0.0.0">
+                <fieldset>
+                <legend>Comment</legend>
+
+                <label for="user">Your name: </label>
+                <input id="user" type="text" name="username" maxlength="50" required="required" placeholder="anonymous"/>
+                <br><br>
+
+                <label for="mail" >Your email: </label>
+                <input type="email" name="mail" id="mail" required="required" placeholder="example@gmail.com">
+                <br><br>
+
+                <textarea id="comment" name="comment" cols="60" rows="10" required="required">Type your comment here...</textarea>
+                <br><br>
+
+                <input type="checkbox" name="agree" id="agree" checked="checked"> Receive an email with each entry.
+                <br>
+                <input type="checkbox" name="agree" id="agree" checked="checked"> Receive emails of this topic.
+
+                <br><br>
+                <input type="button" value="submit" name="Send comment">
+
+                </fieldset>
+                
+            </form>
+        </div>
+        <div id="footer">
+            <p>Copyright &copy 2020. Designer by Dari Hernandez.</p>
+            <a href="mailto:hernandezdarifrancisco@gmail.com">Send email to designer</a>
+        </div>
+    </div>
+</body>
+</html>

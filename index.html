@@ -7,17 +7,19 @@
     <meta name="description" content="This is a small example for a blog only in html5. The theme is on psychology and mental disorders">
 </head>
 <body>
-    <div id="header">
+    <header></header>
         <img src="images/logo.png" alt="blog logo">
+    </header>
+    <nav>
         <ul>
             <li>Home</li>
             <li>About us</li>
             <li>Contact</li>
             <li>Other blogs</li>
         </ul>
-    </div>
-    <div id="body">
-        <div id=entry>
+    </nav>
+    <main>
+        <header>
             <h1>Vivo con hombre que dice ser mi esposo | Síndrome de Capgras</h1>
             <img src="images/banner.jpg" alt="banner del blog">
             <blockquote cite="https://es.wikipedia.org/wiki/John_Wayne_Gacy">
@@ -28,7 +30,8 @@
                 <br><br>
                 Sé que no debí haberla tomado del cajón del baño. Cuando regrese, John se enfurecerá por eso, pero no tengo opción. Si ese impostor, intenta hacerme algo a mi o a los niños durante la noche, no titubearé y usaré el arma que escondí bajo la cama."
             </blockquote>
-
+        </header>
+        <article>
             <h2>Descripción</h2>
             <p>
                 El texto anterior es una representación de pensaría e incluso llegaría a actuar una persona que padezca el <b>Síndrome de capgras</b>. 
@@ -73,87 +76,92 @@
                 Concluyendo con el tema, y por recomendación personal, <b> si consideras que una persona cercana podría padecer de esto, es importante que reciba ayuda. </b> En caso de ser tú la persona hacia la cual ha desarrollado este padecimiento, para evitar que tu ser querido se torne agresivo en tu presencia, o en el peor de los casos, que termine huyendo, <b> algún externo (tal vez un amigo no muy cercano o un familiar con el que no se relacione demasiado, </b> ya que, como se mencionó, las personas con Síndrome de capgras suelen desarrollarlo hacia personas muy cercanas) podría ser de gran utilidad <b> para convencer a tu ser querido de buscar ayuda.</b>
                 <br><br>
             </p>
-            <p>Relevant information to end the topic</p>
+            <footer>
+                <p>Recursos y fuentes: </p>
+                <ul>
+    
+                    <li>
+                        <a href="https://www.healthline.com/health/capgras-syndrome">https://www.healthline.com/health/capgras-syndrome</a>
+                    </li>
+                    <li>
+                        <a href="www.medicalnewstoday.com/articles/320042">www.medicalnewstoday.com/articles/320042</a>
+                    </li>
+                    <li>
+                        <a href="https://science.howstuffworks.com/life/inside-the-mind/human-brain/capgras-syndrome.htm">https://science.howstuffworks.com/life/inside-the-mind/human-brain/capgras-syndrome.htm</a>
+                    </li>
+                    <li>
+                        <a href="http://www.bvs.hn/RHPP/pdf/2016/pdf/Vol10-1-2016-8.pdf">http://www.bvs.hn/RHPP/pdf/2016/pdf/Vol10-1-2016-8.pdf</a>
+                    </li>
+                    <li><a href="https://psicopedia.org/8397/sindrome-de-capgras/">https://psicopedia.org/8397/sindrome-de-capgras/</a></li>
+                </ul>
+                
+                <iframe width="480" height="230" src="https://www.youtube.com/embed/LNeDfEXKziA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+                <br><br>
+    
+                <iframe width="480" height="230" src="https://www.youtube.com/embed/eBaL36d_iLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </footer>
+        </article>
+    </main>
+    <div>
+        <h1>Lave a comment</h1>
+        <p>Your email address will not be published</p>
+        <form>
+            <fieldset>
+            <legend>Comment</legend>
 
-        </div>
-        <div id="sources">
-            <p>Sources of this blog</p>
-            <ul>
-
-                <li>
-                    <a href="https://www.healthline.com/health/capgras-syndrome">https://www.healthline.com/health/capgras-syndrome</a>
-                </li>
-                <li>
-                    <a href="www.medicalnewstoday.com/articles/320042">www.medicalnewstoday.com/articles/320042</a>
-                </li>
-                <li>
-                    <a href="https://science.howstuffworks.com/life/inside-the-mind/human-brain/capgras-syndrome.htm">https://science.howstuffworks.com/life/inside-the-mind/human-brain/capgras-syndrome.htm</a>
-                </li>
-                <li>
-                    <a href="http://www.bvs.hn/RHPP/pdf/2016/pdf/Vol10-1-2016-8.pdf">http://www.bvs.hn/RHPP/pdf/2016/pdf/Vol10-1-2016-8.pdf</a>
-                </li>
-                <li><a href="https://psicopedia.org/8397/sindrome-de-capgras/">https://psicopedia.org/8397/sindrome-de-capgras/</a></li>
-            </ul>
-            <iframe width="480" height="230" src="https://www.youtube.com/embed/LNeDfEXKziA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+            <label for="user">Your name: </label>
+            <input id="user" type="text" name="username" maxlength="50" required="required" placeholder="anonymous"/>
             <br><br>
 
-            <iframe width="480" height="230" src="https://www.youtube.com/embed/eBaL36d_iLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <label for="mail" >Your email: </label>
+            <input type="email" name="mail" id="mail" required="required" placeholder="example@gmail.com">
+            <br><br>
 
-        </div>
-        <div id="comments">
+            <textarea id="comment" name="comment" cols="60" rows="10" required="required">Type your comment here...</textarea>
+            <br><br>
+
+            <input type="checkbox" name="agree" id="agree" checked="checked"> Receive an email with each entry.
+            <br>
+            <input type="checkbox" name="agree" id="agree" checked="checked"> Receive emails of this topic.
+
+            <br><br>
+            <input type="button" value="submit" name="Send comment">
+
+            </fieldset>
+        </form>
+    </div>
+
+    <section>
+        <article>
             <div id="comment 1">
                 <img src="images/profile.png" alt="user profile image">
                 <i>HanaS</i>
                 <p>14 may, 2020, 16:35 hrs</p>
                 <p>Quiero mas blogs como este.</p>
             </div>
+        </article>
+        <article>
             <div id="comment 2">
                 <img src="images/profile.png" alt="user profile image">
                 <i>AlexRp507</i>
                 <p>22 abr, 2020, 20:52 hrs</p>
                 <p>Buen post, salu2.</p>
             </div>
+        </article>
+        <article>
             <div id="comment 3">
                 <img src="images/profile.png" alt="user profile image">
                 <i>AmandaPhy</i>
                 <p>03 mar, 2020, 08:23 hrs</p>
                 <p>Está interesante el tema, pero la verdad es que no está muye studiando, así que no hay mucha info.</p>
             </div>
-        </div>
-        <div id="comment form">
-            <h1>Lave a comment</h1>
-            <p>Your email address will not be published</p>
-            <form action="www.127.0.0.0">
-                <fieldset>
-                <legend>Comment</legend>
+        </article>
+    </section>
 
-                <label for="user">Your name: </label>
-                <input id="user" type="text" name="username" maxlength="50" required="required" placeholder="anonymous"/>
-                <br><br>
-
-                <label for="mail" >Your email: </label>
-                <input type="email" name="mail" id="mail" required="required" placeholder="example@gmail.com">
-                <br><br>
-
-                <textarea id="comment" name="comment" cols="60" rows="10" required="required">Type your comment here...</textarea>
-                <br><br>
-
-                <input type="checkbox" name="agree" id="agree" checked="checked"> Receive an email with each entry.
-                <br>
-                <input type="checkbox" name="agree" id="agree" checked="checked"> Receive emails of this topic.
-
-                <br><br>
-                <input type="button" value="submit" name="Send comment">
-
-                </fieldset>
-                
-            </form>
-        </div>
-        <div id="footer">
-            <p>Copyright &copy 2020. Designer by Dari Hernandez.</p>
-            <a href="mailto:hernandezdarifrancisco@gmail.com">Send email to designer</a>
-        </div>
-    </div>
+    <footer>
+        <p>Copyright &copy 2020. Designer by Dari Hernandez.</p>
+        <a href="mailto:hernandezdarifrancisco@gmail.com">Send email to designer</a>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,58 @@
+/*Colors
+f7f7f7 white
+43d8c9 blue
+95389e purple
+100303 black
+*/
+
+/*First Letter or Line :first-letter, :first-line
+*/
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    line-height: 150%;
+    background-color: #ffffff;
+
+}
+
+main {
+    background-color: #f7f7f7;
+    line-height: 200%;
+}
+
+nav {
+    color: #95389e;
+    letter-spacing: .3em;
+}
+
+h1, h2, h3 {
+    color: #95389e;
+    font-family: 'Crete Round', serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 24px;
+}
+h3{
+    font-size: 18px;
+}
+
+header > blockquote {
+    font-style: italic;
+}
+
+article {
+    text-align: justify;
+}
+
+#narrative:first-line {
+    font-size: 20px;
+}

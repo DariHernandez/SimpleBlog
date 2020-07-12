@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planes de suscripción, PsyDark Blog</title>
+    <title>PsyDark Planes de suscripción, PsyDark Blog</title>
     <meta name="description" content="This is a small example for a blog only in html5. The theme is on psychology and mental disorders">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="blog logo">
+        <figure>
+            <img src="images/logo.png" alt="blog logo">
+        </figure>
         <nav>
             <ul>
                 <li>Home</li>
@@ -17,51 +20,63 @@
                 <li>Suscribe</li>
             </ul>
         </nav>
-        <button name="btn free">Suscríbete gratis</button>
     </header>  
     <main>
         <header>
-            <h1>Comienza gratis. Sube a Pro y obtén grandes beneficios</h1>
+            <p>Comienza gratis. Sube a Pro y obtén grandes beneficios</p>
             <p>Conuslta <a href="">aquí</a> por cupones de descuento</p>
         </header>
-        <section>
-            <article>
-                <header>
-                    <h2>$0 usd mensuales </h2>
-                    <h1>Suscripción gratis</h1>
-                </header>
-                <h1>Recibe antes que nadie nuestras entrevistas y artículos</h1>    
-                <ul>
-                    <li>Recibe por correo todas nuestras novedades.</li>
-                    <li>Comenta y responde a los comentarios de otros usuarios.</li>
-                    <li>Acceso a material didáctico y de estudio.</li>
-                    <li>Descarga y lee cualquiera de nuestros libros gratuitos.</li>
-                    <li>Guarda artículos para leerlos mas tarde</li>
-                </ul>
-                <footer>
-                    <button>Comienza hoy</button>
-                </footer>
-            </article>
-            <article>
-                <header>
-                    <h2>$10 usd mensuales </h2>
-                    <h1>Cuenta Pro</h1>
-                </header>
-                <h1>Obtén grandes beneficios mes a mes</h1>
-                <h2>Todos los beneficios gratis +</h2>    
-                <ul>
-                    <li>Asesoriamiento psicológico SIN COSTO ADICIONAL.</li>
-                    <li>Comenta y responde a los comentarios de otros usuarios.</li>
-                    <li>Acceso a material exclusivo.</li>
-                    <li>Accede anuestra biblioteca Premium.</li>
-                    <li>Acceder a las entrevistas y artículos antes que los otros usuarios.</li>
-                </ul>
-                <footer>
-                    <button>¡No esperes más!</button>
-                </footer>
-            </article>
-        </section>
-        <section>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <p>$0 usd mensuales </p>
+                            <p>Suscripción gratis</p>
+                        </th>
+                        <th>
+                            <p>$10 usd mensuales </p>
+                            <p>Cuenta Pro</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>Recibe antes que nadie nuestras entrevistas y artículos</p>    
+                            <ul>
+                                <li>Recibe por correo todas nuestras novedades.</li>
+                                <li>Comenta y responde a los comentarios de otros usuarios.</li>
+                                <li>Acceso a material didáctico y de estudio.</li>
+                                <li>Descarga y lee cualquiera de nuestros libros gratuitos.</li>
+                                <li>Guarda artículos para leerlos mas tarde</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>Obtén grandes beneficios mes a mes</p>
+                            <p>Todos los beneficios gratis +</p>    
+                            <ul>
+                                <li>Asesoriamiento psicológico SIN COSTO ADICIONAL.</li>
+                                <li>Comenta y responde a los comentarios de otros usuarios.</li>
+                                <li>Acceso a material exclusivo.</li>
+                                <li>Accede anuestra biblioteca Premium.</li>
+                                <li>Acceder a las entrevistas y artículos antes que los otros usuarios.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>Comienza hoy</button>
+                        </td>
+                        <td>
+                            <button>¡No esperes más!</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       
+        <div>
             <p>Medios de pago disponibles</p>
             <table>
                 <tr>
@@ -97,11 +112,12 @@
                     <td>Francisco Dari Hernández</td>
                 </tr>
             </table>
-        </section>
-        <footer>
-            <p>Copyright &copy 2020. Designer by Dari Hernandez.</p>
-            <a href="mailto:hernandezdarifrancisco@gmail.com">Send email to designer</a>
-        </footer>
+        </div>
     </main>  
+
+    <footer>
+        <p>Copyright &copy 2020. Designer by Dari Hernandez.</p>
+        <a href="mailto:hernandezdarifrancisco@gmail.com">Send email to designer</a>
+    </footer>
 </body>
 </html>

@@ -27,6 +27,12 @@ main {
 nav {
     color: #95389e;
     letter-spacing: .3em;
+    font-weight: bold;
+
+}
+
+nav li:hover {
+    color: #1d0b1f;
 }
 
 h1, h2, h3 {
@@ -55,4 +61,36 @@ article {
 
 #narrative:first-line {
     font-size: 20px;
+}
+
+th > p {
+    font-size: 18px;
+}
+
+th > p + p {
+    font-size: 32px;
+    word-spacing: 10px;
+}
+
+#lastFooter  *{
+    line-height: 3px;
+    font-size: 10px;
+    text-align: center;
+}
+
+td > p {
+    font-weight: bold;
+    line-height: 5px;
+    text-align: center;
+}
+#suscribeButton {
+    text-align: center;
+}
+
+a:visited {
+    color: #073d35;
+}
+
+a:link {
+    color: #95389e;
 }

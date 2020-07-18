@@ -19,22 +19,6 @@ body{
 
 }
 
-main {
-    background-color: #f7f7f7;
-    line-height: 200%;
-}
-
-nav {
-    color: #95389e;
-    letter-spacing: .3em;
-    font-weight: bold;
-
-}
-
-nav li:hover {
-    color: #1d0b1f;
-}
-
 h1, h2, h3 {
     color: #95389e;
     font-family: 'Crete Round', serif;
@@ -51,46 +35,83 @@ h3{
     font-size: 18px;
 }
 
-header > blockquote {
-    font-style: italic;
+#comments_form {
+    width: 80%;
+    margin: 10px auto 10px auto;
+    padding: 15px;
+    border-radius: 20px;
 }
 
-article {
-    text-align: justify;
+#comments_form form {
+    border: none;
+    margin: 10px auto 10px auto;
+    text-align: center;
 }
 
-#narrative:first-line {
+#comments_form input.input_text{
+    width: 35%;
+    border: none;
+    border: 2px red solid;
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    background-color: #fae6fbed;
+}
+
+#comments_form input.input_text:focus{
+    outline:none;
+    background-color: purple;
+    color: #fae6fbed;
+}
+#comments_form input.input_text:focus::placeholder{
+    outline:none;
+    background-color: purple;
+    color: #fae6fb70;
+}
+
+
+#comments_form textarea{
+    display: block;
+    /*border: 2px red solid;*/
+    margin: 5px auto 5px auto;
+    width: 80%;
+    padding: 10px;
+    resize: none;
+    height: 100px;
+    border-radius: 10px;
+    border:none;
+    background-color: #fae6fbed;
+}
+
+#comments_form textarea:focus{
+    outline:none;
+    background-color: purple;
+    color: #fae6fbed;
+}
+
+#comments_form textarea:focus::placeholder{
+    outline:none;
+    background-color: purple;
+    color: #fae6fb70;
+}
+
+#submit {
+    background-color: purple;
+    color: white;
+    border: none; 
+    border-radius: 10px;
     font-size: 20px;
+    margin: 10px;
+    box-shadow: rgb(70, 3, 70) 3px 3px 3px;
 }
 
-th > p {
-    font-size: 18px;
+#submit:hover {
+    background-color: rgb(77, 0, 77);
 }
 
-th > p + p {
-    font-size: 32px;
-    word-spacing: 10px;
-}
-
-#lastFooter  *{
-    line-height: 3px;
-    font-size: 10px;
-    text-align: center;
-}
-
-td > p {
-    font-weight: bold;
-    line-height: 5px;
-    text-align: center;
-}
-#suscribeButton {
-    text-align: center;
-}
-
-a:visited {
-    color: #073d35;
-}
-
-a:link {
-    color: #95389e;
+#submit:active {
+    background-color: #fae6fbed;
+    color: purple;
+    outline:none;
 }

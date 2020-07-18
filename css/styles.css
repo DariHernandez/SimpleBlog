@@ -16,23 +16,32 @@ f7f7f7 white
 body{
     line-height: 150%;
     background-color: #ffffff;
-
 }
 
 main {
     background-color: #f7f7f7;
     line-height: 200%;
+    width: 90%;
+    padding: 20px;
+    margin: 0px auto 0px auto;
+    box-shadow: 10px 15px 5px darkgrey;
+    border-radius: 30px;
 }
 
-nav {
-    color: #95389e;
-    letter-spacing: .3em;
-    font-weight: bold;
-
+main > header {
+    margin: 20px auto 50px auto;
 }
 
-nav li:hover {
-    color: #1d0b1f;
+main > header > figure > img {
+    width: 100%;
+}
+
+main > footer {
+    margin: 50px auto 20px auto;
+}
+
+main p {
+    text-align: justify;
 }
 
 h1, h2, h3 {
@@ -55,36 +64,12 @@ header > blockquote {
     font-style: italic;
 }
 
-article {
-    text-align: justify;
-}
-
-#narrative:first-line {
+header > blockquote:first-line {
     font-size: 20px;
 }
 
-th > p {
-    font-size: 18px;
-}
-
-th > p + p {
-    font-size: 32px;
-    word-spacing: 10px;
-}
-
-#lastFooter  *{
-    line-height: 3px;
-    font-size: 10px;
-    text-align: center;
-}
-
-td > p {
-    font-weight: bold;
-    line-height: 5px;
-    text-align: center;
-}
-#suscribeButton {
-    text-align: center;
+article {
+    text-align: justify;
 }
 
 a:visited {

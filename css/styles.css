@@ -32,6 +32,12 @@ body{
     width: 20px;
 }
 
+h1, h2, h3 {
+    color: #95389e;
+    font-family: 'Crete Round', serif;
+    text-transform: uppercase;
+}
+
 #comments > div > i {
     font-size: 16px;
 }
@@ -46,7 +52,6 @@ body{
 
 }
 
-
 #footer {
     background-color: #95389e;
     border:none;
@@ -60,10 +65,83 @@ body{
     margin: 0;
 }
 
-a:visited {
-    color: #073d35;
+#comments_form {
+    width: 80%;
+    margin: 10px auto 10px auto;
+    padding: 15px;
+    border-radius: 20px;
 }
 
-a:link {
-    color: #95389e;
+#comments_form form {
+    border: none;
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+
+#comments_form input.input_text{
+    width: 35%;
+    border: none;
+    border: 2px red solid;
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    background-color: #fae6fbed;
+}
+
+#comments_form input.input_text:focus{
+    outline:none;
+    background-color: purple;
+    color: #fae6fbed;
+}
+#comments_form input.input_text:focus::placeholder{
+    outline:none;
+    background-color: purple;
+    color: #fae6fb70;
+}
+
+
+#comments_form textarea{
+    display: block;
+    /*border: 2px red solid;*/
+    margin: 5px auto 5px auto;
+    width: 80%;
+    padding: 10px;
+    resize: none;
+    height: 100px;
+    border-radius: 10px;
+    border:none;
+    background-color: #fae6fbed;
+}
+
+#comments_form textarea:focus{
+    outline:none;
+    background-color: purple;
+    color: #fae6fbed;
+}
+
+#comments_form textarea:focus::placeholder{
+    outline:none;
+    background-color: purple;
+    color: #fae6fb70;
+}
+
+#submit {
+    background-color: purple;
+    color: white;
+    border: none; 
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+    box-shadow: rgb(70, 3, 70) 3px 3px 3px;
+}
+
+#submit:hover {
+    background-color: rgb(77, 0, 77);
+}
+
+#submit:active {
+    background-color: #fae6fbed;
+    color: purple;
+    outline:none;
 }

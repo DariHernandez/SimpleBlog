@@ -9,6 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="comments_form">
+            
+        <h1>Lave a comment</h1>
+        <p>Your email address will not be published</p>
+        <form action="https://sites.google.com/site/mifilesserver/Python%20Crash%20Course.pdf.pdf?attredirects=0&d=1" method="GET" autocomplete="off">
+            <input class="input_text" id="user" type="text" name="username" maxlength="50" required="required" placeholder="Tu nombre"/>
+
+            <input class="input_text" type="email" name="mail" id="mail" required="required" placeholder="correo@gmail.com">
+
+            <textarea id="comment" name="comment" cols="60" rows="10" required="required" placeholder="Type your comment here..."></textarea>
+            
+            <div>
+                <input type="checkbox" name="agree" id="agree1" checked="checked"> 
+                <label for="agree1">Receive an email with each entry.</label>
+            </div>
+            <div>
+                <input type="checkbox" name="agree" id="agree2" checked="checked"> 
+                <label for="agree2">Receive emails of this topic.</label>
+            </div>
+
+            <input type="submit" value="Publicar comentario" name="Send comment" id="submit">
+        </form>
+    </div>
 
     <div id="comments">
         <div id="comment 1">
@@ -35,5 +58,7 @@
         <p>Copyright &copy 2020. Designer by Dari Hernandez.</p>
         <p><a href="mailto:hernandezdarifrancisco@gmail.com">Send email to designer</a></p>
     </footer>
+    
+
 </body>
 </html>

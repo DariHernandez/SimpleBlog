@@ -19,78 +19,16 @@ body{
 
 }
 
-main {
-    background-color: #f7f7f7;
-    line-height: 200%;
+
+#footer {
+    background-color: #95389e;
+    border:none;
+    width: auto;
 }
 
-nav {
-    color: #95389e;
-    letter-spacing: .3em;
-    font-weight: bold;
-
-}
-
-nav li:hover {
-    color: #1d0b1f;
-}
-
-h1, h2, h3 {
-    color: #95389e;
-    font-family: 'Crete Round', serif;
-    text-transform: uppercase;
-}
-
-h1 {
-    font-size: 32px;
-}
-h2 {
-    font-size: 24px;
-}
-h3{
-    font-size: 18px;
-}
-
-header > blockquote {
-    font-style: italic;
-}
-
-article {
-    text-align: justify;
-}
-
-#narrative:first-line {
-    font-size: 20px;
-}
-
-th > p {
-    font-size: 18px;
-}
-
-th > p + p {
-    font-size: 32px;
-    word-spacing: 10px;
-}
-
-#lastFooter  *{
-    line-height: 3px;
+#footer * {
     font-size: 10px;
     text-align: center;
-}
-
-td > p {
-    font-weight: bold;
-    line-height: 5px;
-    text-align: center;
-}
-#suscribeButton {
-    text-align: center;
-}
-
-a:visited {
-    color: #073d35;
-}
-
-a:link {
-    color: #95389e;
+    color: white;
+    margin: 0;
 }

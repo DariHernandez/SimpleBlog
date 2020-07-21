@@ -55,9 +55,25 @@ main > footer {
 
 main p {
     text-align: justify;
+    align-items: center;
 }
 
-h1, h2, h3 {
+#header {
+    width: 95%;
+    margin: 5px auto 5px auto;
+    text-align: center;
+}
+
+#header > figure {
+    margin: 0px auto 0px auto;
+    width: 80px;
+}
+
+#header > figure > img {
+    width: 100%;
+}
+
+#header > nav {
     color: #95389e;
     font-family: 'Crete Round', serif;
     text-transform: uppercase;
@@ -177,4 +193,21 @@ article {
     background-color: #fae6fbed;
     color: purple;
     outline:none;
+}
+
+
+header > nav > ul {
+    border-bottom: #95389e solid 2px;
+}
+
+header > nav > ul > li {
+    display: inline;
+    margin: 0px 30px;
+    font-size: 20px;
+    letter-spacing: .3em;
+    font-weight: bold;
+}
+
+header > nav > ul > li:hover {
+    color: #1d0b1f;
 }

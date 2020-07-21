@@ -8,28 +8,59 @@ f7f7f7 white
 /*First Letter or Line :first-letter, :first-line
 */
 
+
+/*Body*/
+
 * {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
 }
 
 body{
-    line-height: 150%;
     background-color: #ffffff;
 }
 
-#comments {
-    width: 70%;
+/*Header*/
+
+
+#header {
+    width: 95%;
+    margin: 5px auto 5px auto;
+    text-align: center;
+}
+
+#header > figure {
     margin: 0px auto 0px auto;
+    width: 80px;
 }
 
-#comments > div {
-    margin: 0px 0px 25px 0px;
+#header > figure > img {
+    width: 100%;
 }
 
-#comments > div > img {
-    width: 20px;
+#header > nav {
+    color: #95389e;
+    font-family: 'Crete Round', serif;
+    text-transform: uppercase;
 }
+
+#header > nav > ul {
+    border-bottom: #95389e solid 2px;
+}
+
+#header > nav > ul > li {
+    display: inline;
+    margin: 0px 30px;
+    font-size: 20px;
+    letter-spacing: .3em;
+    font-weight: bold;
+}
+
+#header > nav > ul > li:hover {
+    color: #1d0b1f;
+}
+
+/*Main*/
 
 main {
     background-color: #f7f7f7;
@@ -58,53 +89,15 @@ main p {
     align-items: center;
 }
 
-#header {
-    width: 95%;
-    margin: 5px auto 5px auto;
-    text-align: center;
+main > header > blockquote:first-line {
+    font-size: 20px;
 }
 
-#header > figure {
-    margin: 0px auto 0px auto;
-    width: 80px;
+main > article {
+    text-align: justify;
 }
 
-#header > figure > img {
-    width: 100%;
-}
-
-#header > nav {
-    color: #95389e;
-    font-family: 'Crete Round', serif;
-    text-transform: uppercase;
-}
-
-#comments > div > i {
-    font-size: 16px;
-}
-
-#comments > div > p {
-    font-size: 10px;
-    margin: 0px;
-}
-
-#comments > div > p + p {
-    font-size: 14px;
-
-}
-
-#footer {
-    background-color: #95389e;
-    border:none;
-    width: auto;
-}
-
-#footer * {
-    font-size: 10px;
-    text-align: center;
-    color: white;
-    margin: 0;
-}
+/*Comments form*/
 
 #comments_form {
     width: 80%;
@@ -136,13 +129,7 @@ main p {
     color: #fae6fbed;
 }
 
-header > blockquote:first-line {
-    font-size: 20px;
-}
 
-article {
-    text-align: justify;
-}
 #comments_form input.input_text:focus::placeholder{
     outline:none;
     background-color: purple;
@@ -195,19 +182,46 @@ article {
     outline:none;
 }
 
+/*Comments*/
 
-header > nav > ul {
-    border-bottom: #95389e solid 2px;
+#comments {
+    width: 90%;
+    margin: 0px auto 0px auto;
 }
 
-header > nav > ul > li {
-    display: inline;
-    margin: 0px 30px;
-    font-size: 20px;
-    letter-spacing: .3em;
-    font-weight: bold;
+#comments > div {
+    margin: 0px 0px 25px 0px;
 }
 
-header > nav > ul > li:hover {
-    color: #1d0b1f;
+#comments > div > img {
+    width: 20px;
+}
+
+#comments > div > i {
+    font-size: 16px;
+}
+
+#comments > div > p {
+    font-size: 14px;
+    margin: 0px;
+}
+
+#comments > div > p + p {
+    font-size: 18px;
+
+}
+
+/*Footer*/
+
+#footer {
+    background-color: #95389e;
+    border:none;
+    width: auto;
+}
+
+#footer * {
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    margin: 0;
 }
